@@ -1,6 +1,7 @@
 import kozos_eljaras
 def foetel():
     ar1: int=0
+    valasztott_etel=""
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
     kerfoetelt:str=input("Kér Főételt? I/N: ")
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
@@ -19,8 +20,13 @@ def foetel():
     else:
         ar1 = masodik  # különben ha a masodik levest választotta akkor az ar2 változoba a masodik változo árát menti el
 
+    if foetel_be_szam == "1":
+        valasztott_etel = elso_foetel
+    else:
+        valasztott_etel= masodik_foetel
 
 def leves():
+    valasztott_etel2 =""
     ar2: int=0
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
     kerlevest:str=input("Kér Levest? I/N: ")
@@ -39,4 +45,7 @@ def leves():
     else:
         ar2 = masodik #különben ha a masodik levest választotta akkor az ar2 változoba a masodik változo árát menti el
 
-
+    if leves_be == "1":
+        valasztott_etel = elso_leves
+    else:
+        valasztott_etel = masodik_leves
