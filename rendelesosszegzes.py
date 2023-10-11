@@ -1,4 +1,4 @@
-import kozos_eljarasok
+import kozos_eljaras
 def szamla(levesenev,levesear,foaetelnev,foetelar):
     print()
 def szoveg_kiiras(jel,szoveg,jel2):

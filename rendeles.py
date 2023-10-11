@@ -1,8 +1,6 @@
 import kozos_eljaras
-import rendeles
-
-
 def foetel():
+    ar1: int=0
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
     kerfoetelt:str=input("Kér Főételt? I/N: ")
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
@@ -14,17 +12,16 @@ def foetel():
         kozos_eljaras.rendeles_etel(f"{elso_foetel}", f"{elso}")
         kozos_eljaras.rendeles_etel(f"{masodik_foetel}", f"{masodik}")
     kozos_eljaras.csillagok("*", 40)  # 32 csillag fejléc
-    foetel_be_szam:int=input("Melyik főételt kéri? ") #ebbe tárolom melyik fő ételt választotta számként van megadva
+    foetel_be_szam=input("Melyik főételt kéri? ") #ebbe tárolom melyik fő ételt választotta számként van megadva
     ar1:int=0 #ebbe tárolom a választott lev
-
-
-    if foetel_be == elso_foetel:
-        ar1== elso
+    if foetel_be_szam == "1":  # ha a választott leves 1 akkor az ar2 változoba a leves elso változo árát menti el
+        ar1 = elso
     else:
-        ar1== masodik
+        ar1 = masodik  # különben ha a masodik levest választotta akkor az ar2 változoba a masodik változo árát menti el
 
 
 def leves():
+    ar2: int=0
     kozos_eljaras.csillagok("*", 40)#32 csillag fejléc
     kerlevest:str=input("Kér Levest? I/N: ")
     elso_leves:str="1. Franciahagyma leves"
@@ -34,11 +31,12 @@ def leves():
     if kerlevest=="I" or "i":
         kozos_eljaras.rendeles_etel(f"{elso_leves}", f"{elso}")
         kozos_eljaras.rendeles_etel(f"{masodik_leves}", f"{masodik}")
-    foetel_be:int=input("Melyik Levest kéri? ") #ebbe tárolom melyik fő ételt választotta számként van megadva
+    kozos_eljaras.csillagok("*", 40)  # 32 csillag fejléc
+    leves_be=input("Melyik Levest kéri? ") #ebbe tárolom melyik fő ételt választotta számként van megadva
     ar2: int = 0 #ebbe tárolom a választott leves árát
-    if foetel_be == elso_leves:
-        ar2 == elso
+    if leves_be == "1": #ha a választott leves 1 akkor az ar2 változoba a leves elso változo árát menti el
+        ar2 = elso
     else:
-        ar2 == masodik
+        ar2 = masodik #különben ha a masodik levest választotta akkor az ar2 változoba a masodik változo árát menti el
 
 
