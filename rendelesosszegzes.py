@@ -1,6 +1,6 @@
 import kozos_eljaras
 import rendeles
-def szamla(levesenev,levesear,foaetelnev,foetelar):
+def szamla(jel,levesenev,levesear,foaetelnev,foetelar):
     print()
 def szoveg_kiiras(jel,szoveg,jel2):
     print(f"{jel} {szoveg:^28}{jel2}")
